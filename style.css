@@ -1,0 +1,110 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    overflow-x: hidden;
+    min-height: 100%;
+    /* background: #ccc; */
+    background: #f5f5f5;
+}
+header{
+    background: darkblue;
+    position: relative;
+    margin-top: 0px !important;
+    /* width: 100%; */
+    padding: 10px 15px;
+    z-index: 2;
+   
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+nav a{
+    color : #f5f5f5;
+    text-decoration: none;
+    /* flex-direction: row; */
+    /* justify-content: space-between;    */
+}
+footer{
+    background: darkblue;
+    position: relative;
+    /* bottom: -60px !important; */
+    top : 0%;
+    margin-bottom: 0% !important;
+    width: 100%;
+    padding: 10px 15px;
+    color : #fff;
+   
+}
+#cov{
+  position: relative;
+    width: 100%;
+    min-height: 80vh;
+    /* border: 1px solid salmon; */
+}
+#cov #cont{
+    margin: auto 10%;
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0px 2px 10px 2px #999;
+    border-radius: 8px;
+    animation-fill-mode: forwards;
+    min-height: 50% !important;
+    /* border: 1px solid salmon; */
+    /* transition-:  */
+}
+@keyframes right{
+100% {
+    left: 0%;
+}
+}
+@keyframes left{
+    20% {
+        /* -webkit-transform: skewX(100deg); */
+    }
+    100% {
+        right: 0%;
+    }
+    }
+    .left{
+        right : -100%;
+        animation: left 500ms ease-out;
+    /* animation-fill-mode: forwards; */
+
+    }
+    .right{
+        right : -100%;
+        animation: left 1.3s ease-out;
+        /* transition: right left 1s ease-out; */
+    /* animation-fill-mode: forwards; */
+    }
+    .opacity{
+        opacity: 0; 
+        transition: opacity 0.5ms ease-out;
+    }
+    .noOpacity{
+        opacity: 1; 
+        /* transition: opacity 100ms ease-out; */
+    }
+/* @keyframes rainbow{
+    0% { background: #ff0000}
+    8.333% { background: #ff8000}
+    16.667% { background: #ffff00}
+    33.333% { background: #80ff00}
+    41.667% { background: #00ff00}
+    50.000% { background: #00ff88}
+    58.333% { background: #3685d4}
+    66.667% { background: #0000ff}
+    75.000% { background: #8000ff}
+    83.333% { background: #ff00ff}
+    91.667% { background: #ff0080} 
+    100.00% { background: #ff0000}
+} */
